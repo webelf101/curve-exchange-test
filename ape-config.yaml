@@ -1,0 +1,33 @@
+name: curve-dca-bot-vyper
+
+plugins:
+  - name: vyper
+  - name: hardhat
+  - name: foundry
+  - name: ganache
+
+ethereum:
+  default_network: mainnet-fork
+  mainnet_fork:
+    default_provider: foundry
+
+hardhat:
+  port: auto
+  fork:
+    ethereum:
+      mainnet:
+        upstream_provider: infura
+        enable_hardhat_deployments: true
+
+ganache:
+  fork:
+    ethereum:
+      mainnet:
+        upstream_provider: infura
+
+foundry:
+  port: auto
+  fork:
+    ethereum:
+      mainnet:
+        upstream_provider: infura
