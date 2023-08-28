@@ -5,6 +5,7 @@ plugins:
   - name: hardhat
   - name: foundry
   - name: ganache
+  - name: infura
 
 ethereum:
   default_network: mainnet-fork
